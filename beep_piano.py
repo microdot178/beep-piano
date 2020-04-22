@@ -7,10 +7,11 @@ root.title('beep piano c:')
 root.geometry('602x164')
 root.resizable(False, False)
 
+# это все снизу клавиши 
+
 b1 = Button (text='C', width=3, height=15)
 def play():
     os.system("beep -f 261.6")
-    print(root.geometry())
 b1.config(command=play)
 b1.pack()
 b1.place(x=1, y=2)
@@ -102,4 +103,116 @@ b13.config(command=play13)
 b13.pack()
 b13.place(x=550, y=1)
 
+###########################################
+
+# бинды для кнопок q,w,e,r,t,y,u,i,o,p,[,].
+
+def bind1(event):
+    root(10, bind_q, event.widget)
+
+def bind_q(widget):
+    play()
+
+##################################
+
+def bind2(event):
+    root(10, bind_w, event.widget)
+
+def bind_w(widget):
+    play2()
+
+##################################
+
+def bind3(event):
+    root(10, bind_e, event.widget)
+
+def bind_e(widget):
+    play3()
+
+##################################
+
+def bind4(event):
+    root(10, bind_r, event.widget)
+
+def bind_r(widget):
+    play4()
+
+##################################
+
+def bind5(event):
+    root(10, bind_t, event.widget)
+
+def bind_t(widget):
+    play5()
+
+##################################
+
+def bind6(event):
+    root(10, bind_y, event.widget)
+
+def bind_y(widget):
+    play6()
+
+##################################
+
+def bind7(event):
+    root(10, bind_u, event.widget)
+
+def bind_u(widget):
+    play7()
+
+##################################
+
+def bind8(event):
+    root(10, bind_i, event.widget)
+
+def bind_i(widget):
+    play8()
+
+##################################
+
+def bind10(event):
+    root(10, bind_o, event.widget)
+
+def bind_o(widget):
+    play10()
+
+##################################
+
+def bind11(event):
+    root(10, bind_p, event.widget)
+
+def bind_p(widget):
+    play11()
+
+##################################
+
+def bind12(event):
+    root(10, bind_12, event.widget)
+
+def bind_12(widget):
+    play12()
+
+##################################
+
+def bind13(event):
+    root(10, bind_13, event.widget)
+
+def bind_13(widget):
+    play13()
+
+##################################
+
+root.bind('<q>', bind_q)
+root.bind('<w>', bind_w)
+root.bind('<e>', bind_e)
+root.bind('<r>', bind_r)
+root.bind('<t>', bind_t)
+root.bind('<y>', bind_y)
+root.bind('<u>', bind_u)
+root.bind('<i>', bind_i)
+root.bind('<o>', bind_o)
+root.bind('<p>', bind_p)
+root.bind('<Key-0x005b>', bind_12)
+root.bind('<Key-0x005d>', bind_13)
 root.mainloop()
