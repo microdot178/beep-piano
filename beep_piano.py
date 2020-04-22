@@ -6,6 +6,7 @@ root = tk.Tk()
 root.title('beep piano c:')
 root.geometry('602x164')
 root.resizable(False, False)
+root.iconphoto(False, tk.PhotoImage(file='favicon.png'))
 
 # это все снизу клавиши 
 
