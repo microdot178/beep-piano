@@ -16,7 +16,7 @@ b1.config(command=play)
 b1.pack()
 b1.place(x=1, y=2)
 
-b2 = Button (text='C#', width=3, height=15)
+b2 = Button (text='C#', width=3, height=15, background="#555",)
 def play2 ():
     os.system('beep -f 277.2')
 
@@ -31,7 +31,7 @@ def play3 ():
 b3.config(command=play3)
 b3.pack()
 b3.place(x=100, y=1)
-b4 = Button (text='D#', width=3, height=15)
+b4 = Button (text='D#', width=3, height=15, background="#555",)
 def play4 ():
     os.system('beep -f 311.1')
 
@@ -55,7 +55,7 @@ b6.config(command=play6)
 b6.pack()
 b6.place(x=250, y=1)
 
-b7 = Button (text='F#', width=3, height=15)
+b7 = Button (text='F#', width=3, height=15, background="#555",)
 def play7 ():
     os.system('beep -f 370.0')
 
@@ -71,7 +71,7 @@ b8.config(command=play8)
 b8.pack()
 b8.place(x=350, y=1)
 
-b10 = Button (text='G#', width=3, height=15)
+b10 = Button (text='G#', width=3, height=15, background="#555",)
 def play10 ():
     os.system('beep -f 415.3')
 
@@ -87,7 +87,7 @@ b11.config(command=play11)
 b11.pack()
 b11.place(x=450, y=1)
 
-b12 = Button (text='A#', width=3, height=15)
+b12 = Button (text='A#', width=3, height=15, background="#555",)
 def play12 ():
     os.system('beep -f 466.2')
 
