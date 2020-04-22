@@ -5,4 +5,6 @@ blacklist pcspkr в файле /etc/modprobe.d/blacklist.conf
 и выполни команду 
 sudo modprobe pcspkr , 
 а еще должен быть установлен beep.
+
+Октава расположена на кнопках q,w,e,r,t,y,u,i,o,p,[,]. c:
 `
