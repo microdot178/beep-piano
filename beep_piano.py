@@ -72,37 +72,37 @@ b8.config(command=play8)
 b8.pack()
 b8.place(x=350, y=1)
 
-b10 = Button (text='G#', width=3, height=15, background="#555",)
-def play10 ():
+b9 = Button (text='G#', width=3, height=15, background="#555",)
+def play9 ():
     os.system('beep -f 415.3')
+
+b9.config(command=play9)
+b9.pack()
+b9.place(x=400, y=1)
+
+b10 = Button (text='A', width=3, height=15)
+def play10 ():
+    os.system('beep -f 440.0')
 
 b10.config(command=play10)
 b10.pack()
-b10.place(x=400, y=1)
+b10.place(x=450, y=1)
 
-b11 = Button (text='A', width=3, height=15)
+b11 = Button (text='A#', width=3, height=15, background="#555",)
 def play11 ():
-    os.system('beep -f 440.0')
+    os.system('beep -f 466.2')
 
 b11.config(command=play11)
 b11.pack()
-b11.place(x=450, y=1)
+b11.place(x=500, y=1)
 
-b12 = Button (text='A#', width=3, height=15, background="#555",)
+b12 = Button (text='B', width=3, height=15)
 def play12 ():
-    os.system('beep -f 466.2')
+    os.system('beep -f 493.9')
 
 b12.config(command=play12)
 b12.pack()
-b12.place(x=500, y=1)
-
-b13 = Button (text='B', width=3, height=15)
-def play13 ():
-    os.system('beep -f 493.9')
-
-b13.config(command=play13)
-b13.pack()
-b13.place(x=550, y=1)
+b12.place(x=550, y=1)
 
 ###########################################
 
@@ -176,7 +176,7 @@ def bind10(event):
     root(10, bind_o, event.widget)
 
 def bind_o(widget):
-    play10()
+    play9()
 
 ##################################
 
@@ -184,7 +184,7 @@ def bind11(event):
     root(10, bind_p, event.widget)
 
 def bind_p(widget):
-    play11()
+    play10()
 
 ##################################
 
@@ -192,7 +192,7 @@ def bind12(event):
     root(10, bind_12, event.widget)
 
 def bind_12(widget):
-    play12()
+    play11()
 
 ##################################
 
@@ -200,7 +200,7 @@ def bind13(event):
     root(10, bind_13, event.widget)
 
 def bind_13(widget):
-    play13()
+    play12()
 
 ##################################
 
