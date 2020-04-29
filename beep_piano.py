@@ -172,7 +172,7 @@ def bind_i(widget):
 
 ##################################
 
-def bind10(event):
+def bind9(event):
     root(10, bind_o, event.widget)
 
 def bind_o(widget):
@@ -180,7 +180,7 @@ def bind_o(widget):
 
 ##################################
 
-def bind11(event):
+def bind10(event):
     root(10, bind_p, event.widget)
 
 def bind_p(widget):
@@ -188,18 +188,18 @@ def bind_p(widget):
 
 ##################################
 
-def bind12(event):
+def bind11(event):
     root(10, bind_12, event.widget)
 
-def bind_12(widget):
+def bind_11(widget):
     play11()
 
 ##################################
 
-def bind13(event):
-    root(10, bind_13, event.widget)
+def bind12(event):
+    root(10, bind_12, event.widget)
 
-def bind_13(widget):
+def bind_12(widget):
     play12()
 
 ##################################
@@ -214,6 +214,6 @@ root.bind('<u>', bind_u)
 root.bind('<i>', bind_i)
 root.bind('<o>', bind_o)
 root.bind('<p>', bind_p)
-root.bind('<Key-0x005b>', bind_12)
-root.bind('<Key-0x005d>', bind_13)
+root.bind('<Key-0x005b>', bind_11)
+root.bind('<Key-0x005d>', bind_12)
 root.mainloop()
