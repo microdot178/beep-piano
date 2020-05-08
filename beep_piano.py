@@ -22,7 +22,7 @@ b1.config(command=play)
 b1.pack()
 b1.place(x=1, y=2)
 
-b2 = Button (text='C#', width=3, height=15, background="deep sky blue",)
+b2 = Button (text='C#', width=3, height=15, background="pink",)
 def play2 ():
     os.system('beep -f 277.2')
 
